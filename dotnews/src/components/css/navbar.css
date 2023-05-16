@@ -1,0 +1,17 @@
+.navbar{
+    /* border: 2px solid red; */
+}
+
+.navbar-brand{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+}
+
