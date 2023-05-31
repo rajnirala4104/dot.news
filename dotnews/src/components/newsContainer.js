@@ -21,12 +21,10 @@ function NewsContainer(props) {
                 console.log(`-title : ${newsDic.title}\n-description: ${newsDic.description}\n-imageUrl: ${newsDic.urlToImage}\n-Time: ${newsDic.publishedAt}`)
             });
         }, err => console.log(err))
-        // console.log(newsState)
-        // setNewsState(newsState)
+
     return (
         <div className="container newsContainer row">
             {newsState.map((news, index) => {
-                // console.log(news);
                 return (
                     <NewsBox key={index} newsPublishTime={news.newsPublishTime} newsTitle={news.newsTitle} newsDescription={news.newsDescription} newsImageUrl={news.newsImageUrl}/>
                 )
