@@ -7,7 +7,7 @@ function NewsBox(props) {
             <div className="card-body">
                 <h5 className="card-title">{props.newsTitle}</h5>
                 <p className="card-text">{props.newsDescription}</p>
-                <a href="/" className="btn btn-primary">Read More</a>
+                <a href="/" className="btn btn-primary">Read More...</a>
             </div>
         </div>
     )
