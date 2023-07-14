@@ -5,3 +5,4 @@ export const http = axios.create({
     baseURL: BASE_URL,
     timeout: timeOut
 })
+
