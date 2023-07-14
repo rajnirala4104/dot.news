@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
+import { Cards } from "./components/Cards";
+import Navbar from "./shared/components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <div className="bg-red-100 text-2xl">Hello world</div>
+      <Navbar />
+      <div className="container">
+        <Cards />
+      </div>
     </div>
   );
 }
