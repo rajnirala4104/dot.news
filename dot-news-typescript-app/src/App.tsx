@@ -15,9 +15,9 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App bg-gray-100">
       <Navbar />
-      <div className="container">
+      <div className="container flex-wrap flex flex-col lg:flex-row justify-center items-center mx-auto">
         {news.map((newsDic) => (
           <Cards
             newsAuthor={newsDic.author}
