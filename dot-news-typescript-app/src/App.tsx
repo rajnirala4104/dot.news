@@ -14,12 +14,14 @@ function App() {
     })();
   }, []);
 
+  console.log(news);
   return (
     <div className="App bg-gray-100">
       <Navbar />
       <div className="container flex-wrap flex flex-col lg:flex-row justify-center items-center mx-auto">
-        {news.map((newsDic) => (
+        {news.map((newsDic, i) => (
           <Cards
+            key={i}
             newsAuthor={newsDic.author}
             newsImageUrl={newsDic.urlToImage}
             newsPublicshTime={newsDic.publishedAt}
